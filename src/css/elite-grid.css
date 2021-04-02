@@ -1,0 +1,79 @@
+﻿
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+.columnas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.columnas > *{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.columna {
+    flex: 1 0 0%;
+    padding: 5px;
+}
+
+.columna.twelve {
+    flex: 0 0 auto;
+    width: 100.000000000%;
+}
+.columna.eleven {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+}
+.columna.ten {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+}
+.columna.nine {
+    flex: 0 0 auto;
+    width: 75.0000000000%;
+}
+.columna.eight {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+}
+.columna.seven {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+}
+.columna.six{
+    flex: 0 0 auto;
+    width:50.0000000%;
+}
+.columna.five {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+}
+.columna.four {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+
+.columna.three {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.columna.two {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+}
+
+.columna.one {
+    flex: 0 0 auto;
+    width: 8.33333333333%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="columna"] {
+      width: 100% !important;
+    }
+  }
